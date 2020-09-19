@@ -1,21 +1,18 @@
-# another way to sort a list...
+# bubble sort
+# what is it good for?
+# nothing, its just taught as an introduction to algorithms
+some_list  = [6, 2, 5, 4, 2]
 
-# look at element i and i + 1
-# if i is greater than i + 1, swap them
-# repeat until list is sorted
+unsorted = True
 
-sorts = 0
-unsorted = T
 while unsorted:
-    unsorted = Fa
+    unsorted = False
     i = 0
-    while i < len(a) - 1:
-        if a[i] > a[i + 1]:
-            num1 = a[i]
-            num2 = a[i + 1]
-            a[i] = num2
-            a[i + 1] = num1
-            sorts = sorts + 1
+
+    while i < len(some_list) - 1:
+        if some_list[i] > some_list[i + 1]:
+            some_list[i], some_list[i + 1] = some_list[i + 1], some_list[i]
             unsorted = True
-        
         i += 1
+
+print(some_list)
